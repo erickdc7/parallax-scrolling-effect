@@ -86,3 +86,71 @@ section .container .content {
 section:nth-child(even) .container .content {
   left: 0;
 }
+
+@media screen and (max-width: 1000px) {
+  section .container .content {
+    right: 10rem;
+  }
+
+  section:nth-child(even) .container .content {
+    left: 10rem;
+  }
+
+  body::before {
+    font-size: 10rem;
+  }
+}
+
+@media screen and (max-width: 710px) {
+  section .container .content {
+    right: 13rem;
+  }
+
+  section:nth-child(even) .container .content {
+    left: 23rem;
+  }
+
+  body::before {
+    font-size: 7rem;
+  }
+
+  section h2 {
+    margin-left: 450px;
+    font-size: 3.5em;
+  }
+}
+
+@media screen and (max-width: 550px) {
+  section .container .content {
+    right: 10rem;
+  }
+
+  section:nth-child(even) .container .content {
+    left: 35rem;
+  }
+}
+
+@media screen and (max-width: 370px) {
+  section h2 {
+    margin-left: 450px;
+    font-size: 2em;
+  }
+
+  section .container .content {
+    padding: 15px;
+    max-width: 250px;
+    right: 25rem;
+  }
+
+  section:nth-child(even) .container .content {
+    left: 23rem;
+  }
+
+  section .container .content p {
+    font-size: 0.75rem;
+  }
+
+  body::before {
+    font-size: 4rem;
+  }
+}
